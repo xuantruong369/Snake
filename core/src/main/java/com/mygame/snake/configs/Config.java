@@ -15,8 +15,8 @@ public class Config {
     public static final String WINDOW_TITLE = "Snake";
     
     // Game speed
-    public static final float MOVE_DELAY = 0.15f;  // seconds
-    // public static final float MOVE_DELAY = 0.01f;
+    // public static final float MOVE_DELAY = 0.15f;  // seconds
+    public static final float MOVE_DELAY = 0.05f;
     
     // Colors (RGBA)
     public static class Colors {

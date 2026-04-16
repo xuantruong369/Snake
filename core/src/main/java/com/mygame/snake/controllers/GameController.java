@@ -139,21 +139,21 @@ public class GameController {
             nextDirec = solver.nextDirec();
         }
         
-        if (nextDirec != null) {
+        if (nextDirec != null && nextDirec != Direc.NONE) {
             moveSnake(nextDirec);
+            moves++;
         }
-        
-        moves++;
     }
     
     /**
      * Di chuyển rắn (gọi từ InputController hoặc AI)
      */
     public void moveSnake(Direc direction) {
+        int oldLength = snake.len();
         snake.move(direction);
         
         // Cập nhật score khi ăn food
-        if (snake.len() > 2) {  // Độ dài thay đổi
+        if (snake.len() > oldLength) {  // Độ dài thay đổi
             score += 10;
         }
     }
@@ -162,14 +162,14 @@ public class GameController {
      * Xử lý khi game kết thúc
      */
     private void onGameOver() {
-        System.out.println("┌─────────────────┐");
-        System.out.println("│   GAME OVER!    │");
-        System.out.println("├─────────────────┤");
-        System.out.println("│ Score: " + score);
-        System.out.println("│ Length: " + snake.len());
-        System.out.println("│ Moves: " + moves);
-        System.out.println("│ Steps: " + snake.getSteps());
-        System.out.println("└─────────────────┘");
+        // System.out.println("┌─────────────────┐");
+        // System.out.println("│   GAME OVER!    │");
+        // System.out.println("├─────────────────┤");
+        // System.out.println("│ Score: " + score);
+        // System.out.println("│ Length: " + snake.len());
+        // System.out.println("│ Moves: " + moves);
+        // System.out.println("│ Steps: " + snake.getSteps());
+        // System.out.println("└─────────────────┘");
     }
     
     /**
