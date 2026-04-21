@@ -36,3 +36,9 @@ SnakeAI/
 ## 🌿 Git Workflow
 
 main ← dev ← feature/\*
+
+## ⚙️ Hướng dẫn cài đặt
+
+B1: git clone https://github.com/xuantruong369/Snake.git
+B2: Chạy game
+Lưu ý: Thỏa mãn điều kiện Java 17
