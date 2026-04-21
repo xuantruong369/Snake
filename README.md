@@ -27,6 +27,15 @@ SnakeAI/
 ./gradlew lwjgl3:run
 ```
 
+## 🚀 Tạo file .exe
+
+```bash
+./gradlew lwjgl3:packageWinX64
+```
+
+Lấy cả thư mục lwjgl3/build/construo/winX64/roast  
+Rồi chạy file .exe
+
 ## 👥 Quy ước làm việc nhóm
 
 - Không code trực tiếp trên main
